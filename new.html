@@ -1,0 +1,399 @@
+<!DOCTYPE html><html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love ❤</title>
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #5656d4;
+      color: #dd5555;
+      text-align: center;
+    }
+
+
+    header {
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    }
+    .letter {
+      background: #fff;
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      line-height: 1.8;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      margin: 30px;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+   
+   
+
+
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f08f9f, #f3a77b);
+  background-size: 300% 300%;
+  animation: shine 10s ease infinite;
+  color: #333;
+  text-align: center;
+  position: relative;
+  overflow: scroll;
+  z-index: 0; /* background ko neeche rakho */
+}
+
+body::before {
+  content: "";
+  position: fixed;  /* pura screen cover kare */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(white 3px, transparent 1px);
+  background-size: 40px 40px;
+  animation: twinkle 5s linear infinite;
+  opacity: 0.6;
+  z-index: -1; /* dots ko hamesha neeche rakho */
+}
+
+@keyframes shine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 0.9; }
+}
+
+.message-box {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid pink;
+  border-radius: 15px;
+  background: #fff0f5;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.message-box p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.message-box button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff69b4;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.message-box button:hover {
+  background: #ff1493;
+}
+
+
+
+#yesPage {
+  display:none; /* pehle hidden */
+  position: fixed; top:0; left:0; width:100%; height:100%;
+  background:#ffafbd;
+  color:#fff;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  z-index:20;
+}
+#yesPage button {
+  padding: 15px 30px;
+  margin-top:20px;
+  font-size:1.2rem;
+  border:none;
+  border-radius:15px;
+  cursor:pointer;
+  background:#fff;
+  color:#ff6f91;
+  transition:0.3s;
+}
+#yesPage button:hover { transform:scale(1.1); }
+
+#mainContent {
+  display: none;
+  position: relative;
+  z-index: 5;
+}
+
+    .love-box {
+      display: inline-block;
+      background: #ff6f91;
+      border: 2px solid #fff;
+      border-radius: 15px;
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      color: #fff;
+      margin-top: 20px;
+      text-shadow: 0 0 5px #ff6f91;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .love-box span {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ffe6f0;
+      
+    }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes textglow {
+  from { text-shadow: 0 0 5px #fff, 0 0 10px #fff; }
+  to   { text-shadow: 0 0 15px #ffeff7, 0 0 25px #fff; }
+}
+
+.love-duration-box {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #73bd37ad;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+
+
+
+    #musicBtn {
+  background: #e75779;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 25px 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+#musicBtn:hover {
+  background: #ff4f70;
+  transform: scale(1.05);
+}
+    @keyframes floatUp {
+      0% {transform: translateY(0) rotate(45deg); opacity: 1;}
+      100% {transform: translateY(-800px) rotate(45deg); opacity: 0;}
+    }
+
+    /* Question Page Styles */
+#questionPage {
+  position:fixed; top:0; left:0; width:100%; height:100%;
+  background:#ff6f91; color:#fff;
+  display:flex; flex-direction:column;
+  justify-content:center; align-items:center;
+  z-index:10;
+}
+#questionPage h1 { font-size:2.5rem; margin-bottom:20px; text-shadow: 2px 2px 5px rgba(0,0,0,0.2);}
+#questionPage button { padding: 15px 30px; margin:10px; font-size:1.2rem; border:none; border-radius:15px; cursor:pointer; background:#fff; color:#ff6f91; transition:0.3s;}
+#questionPage button:hover { transform:scale(1.1);}
+
+#byePage {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: #ff6f91;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 200px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+  z-index: 20; 
+}
+  </style> 
+</head>
+<body>
+
+ <!-- Question Page -->
+ <div id="questionPage">
+  <h1>Do you love me? 💕</h1>
+  <div>
+    <button onclick="answerYes()">Yes</button>
+    <button onclick="answerNo()">No</button>
+  </div>
+</div>
+
+
+<!-- Yes Page -->
+<div id="yesPage">
+  <h1>Okk okk I also love youuu 🤧</h1>
+  <button onclick="goToWebsite()">Aaghe Badho 💖</button>
+</div>
+
+<!-- Bye Page -->
+<div id="byePage" style="display: none;">By By 😢</div>
+
+
+
+
+
+
+   <div id="mainContent" style="display: none;">
+  <header>
+    <h1>For My Love ❤</h1>
+  </header>  <section class="letter">
+    <p>My always and forever, Rohit 💕,</p>
+    <p>
+      You are the most beautiful part of my life. i don't know how to put everything i feel into words,but i just want you to know that you've became such an important part of my life. Talking to you,sharing little thing, even our small fights- everything matters to me. Even on days when things aren't easy between us, I know deep down that you are someone I never want to lose.you are my favorite person,my comfort and my home. i love youuu so much babyyyy.💕
+    </p>
+    <p>
+      This little space is just for us — a reminder of how much I love you and how grateful I am to have you by my side.
+    </p>
+    <p>Forever yours,<br> Sanjana 💖</p>
+  </section> 
+   <section class="gallery">
+    
+    <img src="photo111.jpg" alt="Memory 1" width="300" height="200">
+    <img src="photo333.jpg" alt="Memory 3"width="300" height="200">
+    <img src="photo444.jpg" alt="Memory 4"width="300" height="200">
+    <img src="photo555.jpg" alt="Memory 5"width="300" height="200">
+  
+    <img src="photo666.jpg" alt="memory 6" width="300" height="200">
+    <img src="photo777.jpg" alt="memory 7" width="300" height="200">
+    <img src="photo888.jpg" alt="memory 8" width="300" height="200">
+    <img src="photo999.jpg" alt="memory 9" width="300" height="200">
+  
+</section> 
+
+
+  <!-- Tumhara jo bhi existing content hai like photos, gallery, hearts -->
+  
+  <!-- Background music button -->
+  <audio id="bgm" src="musicjitni.mp3" loop></audio>
+  <button id="musicBtn">▶ Play this babyy❤</button>
+<br>
+  <p class="love-box"><span>This song is for you, and I really mean it 💖</span>
+  </p>
+   </div>
+  <!-- Love Duration Box -->
+<section class="love-duration-box">
+  <p>We've shared so many beautiful moments together 💗Every day with you makes my heart happier,my world brighter,<br> and my love  deeper ❤ You are the most beautiful part of my life ,<br> my home, and my future husband 👀😚</p>
+</section>
+
+
+
+   <section id="lovetimer" style="margin:30px 0; font-size: 1.8rem; color:#ff4f70; font-weight: bold; text-shadow: 0 0 10px #fff;">
+    💖 0 days, 0 hours, 0 minutes, 0 seconds of love 💖
+   </section>
+
+
+   <div class="message-box">
+    <p>Want to read something from my heart? 💌</p>
+    <button onclick="window.location.href='message.html'">Click Here</button>
+  </div>
+
+
+  <script>
+    const audio = document.getElementById('bgm');
+    const btn = document.getElementById('musicBtn');
+
+    audio.volume = 0.5; // halka sound rakha hai
+
+    btn.addEventListener('click', async () => {
+      if (audio.paused) {
+        await audio.play();
+        btn.textContent = '⏸ Pause Music';
+      } else {
+        audio.pause();
+        btn.textContent = '▶ Play this babyyy❤';
+      }
+    });
+
+
+function answerYes() {
+  document.getElementById('questionPage').style.display='none';
+  document.getElementById('yesPage').style.display='flex';
+  
+}
+
+function goToWebsite() {
+  document.getElementById('yesPage').style.display='none';
+  document.getElementById('mainContent').style.display = 'block';
+  
+}
+
+function answerNo() {
+ document.getElementById('questionPage').style.display='none';
+  document.getElementById('byePage').style.display='block';
+}
+
+const timerElement = document.getElementById('lovetimer');
+const startDate = new Date('2025-01-23T00:00:00'); // relationship start date
+
+function updateLoveTimer() {
+  const now = new Date();
+  const diff = now - startDate; 
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((diff / (1000 * 60)) % 60);
+  const seconds = Math.floor((diff / 1000) % 60);
+
+  timerElement.textContent = `💖 ${days} Days, ${hours} Hours, ${minutes} Minutes, ${seconds} Seconds of Love 💖`;
+}
+
+setInterval(updateLoveTimer, 1000); // update every second
+updateLoveTimer(); // initial call
+
+
+
+
+  </script>
+
+<footer>
+    Made with ❤ just for you.
+  </footer>
+  
+</body>
+</html>

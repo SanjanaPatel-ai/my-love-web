@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Special Message</title>
+  <style>
+    /* Page background + layout */
+    body{
+      margin:0;
+      font-family: 'Poppins', system-ui, -apple-system, Arial, sans-serif;
+      background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+      background-size: 300% 300%;
+      animation: shine 10s ease infinite;
+      color:#333;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:24px;
+    }
+    @keyframes shine{
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+
+    /* Card */
+    .card{
+      width:min(800px, 92vw);
+      background:#fff;
+      border-radius:24px;
+      padding:28px 24px;
+      box-shadow:0 10px 30px rgba(0,0,0,.15);
+    }
+
+    /* Heading */
+    .love-heading{
+      margin:0 0 14px 0;
+      text-align:center;
+      font-weight:700;
+      font-size:1.9rem;
+      letter-spacing:.5px;
+      color:#ff4f70;
+    }
+    .sub{
+      text-align:center;
+      margin:0 0 22px 0;
+      color:#666;
+      font-size:.95rem;
+    }
+    .divider{
+      height:3px;
+      width:90px;
+      margin:10px auto 22px;
+      border-radius:99px;
+      background: linear-gradient(90deg,#ff6f91,#ffafbd);
+    }
+
+    /* List */
+    .love-letter{
+      margin:0;
+      padding:0;
+      list-style:none;
+      font-size:1.05rem;
+      line-height:1.85;
+    }
+    .love-letter li{
+      position:relative;
+      padding-left:30px;
+      margin:10px 0;
+      opacity:0;
+      transform:translateY(8px);
+      animation: fadeUp .6s ease forwards;
+    }
+    .love-letter li::before{
+      content:"❤";
+      position:absolute;
+      left:0; top:2px;
+      font-size:1.05rem;
+    }
+    /* Staggered reveal */
+    .love-letter li:nth-child(1){animation-delay:.05s}
+    .love-letter li:nth-child(2){animation-delay:.12s}
+    .love-letter li:nth-child(3){animation-delay:.19s}
+    .love-letter li:nth-child(4){animation-delay:.26s}
+    .love-letter li:nth-child(5){animation-delay:.33s}
+    .love-letter li:nth-child(6){animation-delay:.40s}
+    .love-letter li:nth-child(7){animation-delay:.47s}
+    .love-letter li:nth-child(8){animation-delay:.54s}
+    .love-letter li:nth-child(9){animation-delay:.61s}
+    .love-letter li:nth-child(10){animation-delay:.68s}
+
+    @keyframes fadeUp{
+      to{opacity:1; transform:translateY(0)}
+    }
+
+    /* Back link (optional) */
+    .back{
+      display:inline-block;
+      margin-top:22px;
+      text-decoration:none;
+      background:#ff6f91;
+      color:#fff;
+      padding:10px 16px;
+      border-radius:12px;
+      font-weight:600;
+      transition:.2s;
+    }
+    .back:hover{ transform:translateY(-2px); }
+    .big-love{
+  text-align:center;
+  font-weight:800;
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  margin-top: 28px;
+  color:#ff2d55;
+  letter-spacing: 1px;
+  text-shadow: 0 4px 18px rgba(0,0,0,0.2);
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat{
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.05); }
+  50% { transform: scale(0.98); }
+  75% { transform: scale(1.06); }
+}
+
+
+
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1 class="love-heading">My Words for You ♡</h1>
+    <p class="sub">From my heart to yours</p>
+    <div class="divider"></div>
+
+    <ol class="love-letter">
+      <li>You are not just a part of my life — you are my whole life.</li>
+      <li>Every heartbeat of mine whispers your name.</li>
+      <li>Your presence feels like home, safe and eternal.</li>
+      <li>I can’t imagine a single tomorrow without you in it.</li>
+      <li>You are my biggest dream, and I want to live it forever.</li>
+      <li>With you, even silence feels beautiful.</li>
+      <li>You complete me in ways I never knew were missing.</li>
+      <li>My soul already accepts you as my husband.</li>
+      <li>Loving you is not a choice, it’s my destiny.</li>
+      <li>I want to marry you because my forever begins and ends with you. ❤</li>
+    </ol>
+
+    <!-- Optional: go back to main page -->
+    <button onclick="goBack()" style="
+   display: inline-block; 
+   margin-top: 20px; 
+   padding: 12px 24px; 
+   background-color: #c93c55; 
+   color: white; 
+   font-size: 18px; 
+   border-radius: 10px; 
+   border: none; 
+   cursor: pointer;">
+   ⬅ Back to Us
+</button>
+
+<script>
+function goBack() {
+  window.history.back();  // ye hamesha tumhe last visited page pe le jayega
+}
+</script>
+  </main>
+  <div class="big-love">I LOVE YOU, BABYYY💕</div>
+</body>
+</html>
